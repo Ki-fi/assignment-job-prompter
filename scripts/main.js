@@ -1,4 +1,6 @@
-const departments = {
+
+
+const department = {
     marketing: {
         description: "Marketing omvat verschillende strategieën en activiteiten gericht op het promoten van producten, diensten of merken bij het doelpubliek. Het omvat het begrijpen van de behoeften en voorkeuren van consumenten, het uitvoeren van marktonderzoek, het ontwikkelen van marketingplannen en het implementeren van tactieken om potentiële klanten te bereiken en te betrekken. Marketingprofessionals analyseren markttrends, identificeren doelmarkten en creëren overtuigende boodschappen en communicatiestrategieën om merkbekendheid op te bouwen, klantenwerving te stimuleren en klantloyaliteit te bevorderen",
         numberOfEmployees: 45,
@@ -71,4 +73,13 @@ const departments = {
     }
 }
 
-console.log(departments);
+console.log(department);
+
+console.log("De afdeling Sales heeft " + department.sales.numberOfEmployees + " medewerkers.");
+
+console.log("Marketing is een leuke afdeling om te werken. " + department.marketing.description);
+
+console.log("De afdeling Customer Service heeft " + department["customer-service"].numberOfEmployees + " medewerkers");
+
+console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + department.sales.jobs[1].description);
+
