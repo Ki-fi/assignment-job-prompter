@@ -7,7 +7,7 @@
 Een grote corporate heeft jou gevraagd jou een Job Prompter te maken, gezien ze zoveel vragen krijgen over de verschillende
 functies binnen hun bedrijf. _Automatiseren kun je leren!_ Om de informatie zo gericht mogelijk weer te geven, zul je
 input van de gebruiker vragen om zo informatie over de juiste afdeling en functie te verschaffen. Dit doe je op basis
-van de grote dataverzameling aan bedrijfsinformatie genaamd `departments` (te vinden in `main.js`).
+van de grote dataverzameling aan bedrijfsinformatie genaamd `main` (te vinden in `main.js`).
 
 ![screen-gif-prompter.gif](assets/screen-gif-prompter.gif)
 
@@ -17,7 +17,7 @@ van de grote dataverzameling aan bedrijfsinformatie genaamd `departments` (te vi
    plaatsen: `<script src="scripts/main.js"></script>`. Je bekijkt de console dan ook in de **browser**, niet in de terminal.
 2. Voel je vrij om de dataverzameling in een los bestandje te plaatsen. Houdt er wel rekening mee dat je ieder
    afzonderlijk `.js` bestand moet koppelen via een `<script>`-tag in de HTML. Zolang je dit extra bestand aan jouw
-   HTML-document linkt vóór `main.js`, kun je `departments` gewoon aanspreken.
+   HTML-document linkt vóór `main.js`, kun je `main` gewoon aanspreken.
 3. Vergeet niet dat je na iedere wijziging eerst de browser even moet refreshen.
 
 ## Opdracht
@@ -48,7 +48,7 @@ console.log(userInput);
   in plaats van "Marketing" of "MARKETING"), dit voorkomt problemen in het script.
 
 * **Opdracht 2b:** tijd voor het echte werk! Op basis van wat de gebruiker invoert ("marketing", "sales" of "customer
-  service") willen wij een beschrijving van die afdeling in de console loggen. Hiervoor typ je natuurlijk niet handmatig de beschrijvingen over! Je spreekt ze aan via het `departments`-object: hiervoor zul je dus een *beslissingsstructuur* moeten bouwen. Ongeacht de gekozen afdeling, log je de uitkomst in het volgende format: 
+  service") willen wij een beschrijving van die afdeling in de console loggen. Hiervoor typ je natuurlijk niet handmatig de beschrijvingen over! Je spreekt ze aan via het `main`-object: hiervoor zul je dus een *beslissingsstructuur* moeten bouwen. Ongeacht de gekozen afdeling, log je de uitkomst in het volgende format: 
   *"Je koos [ingevoerde keuze]. [beschrijving afdeling]"*
   
 * **Opdracht 2c:** test of alles werkt door alle mogelijke afdelingen een keertje te voeren en te checken of je de
@@ -73,7 +73,7 @@ we hebben deze code straks weer nodig, maar we gaan ons nu even richten op het p
   3: [functietitel marketing 3]
   ```
 
-  Hierbij typ je de functietitels van Marketing niet handmatig over, maar spreek je ze aan via de `marketing`-property in het `departments`-object.
+  Hierbij typ je de functietitels van Marketing niet handmatig over, maar spreek je ze aan via de `marketing`-property in het `main`-object.
 
 * **Opdracht 3b:** Op basis van wat de gebruiker invoert (`0`, `1`, `2`, of `3`) willen wij de beschrijving van de bijbehorende
   marketing-functie-titel en marketing-functie-beschrijving in de console loggen. Dit doe je in het volgende format:
